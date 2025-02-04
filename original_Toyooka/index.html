@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <title>非常に適当な豊丘村の紹介</title>
+</head>
+
+<body>
+  <header>
+      <!--ヘッダー画像はCSSで指定-->
+      <div class="header-inner">
+      <h1>豊丘村</h1><br>
+  </header>
+  <section id="history">
+    <h2>名産品</h2>
+      <ul class="timeline">
+          <li>
+            <div class="timeline-content">
+              <h3>松茸</h3>
+              <p>堀越まつたけ観光という企画があります。松茸のコース料理を食べられます！</p>
+            </div>
+          </li>
+          <li>
+             <div class="timeline-content">
+              <h3>果物</h3>
+              <p>新鮮で美味しいです。たくさんの農園があり、果物狩りができるところが多くあります。</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3>たけのこ</h3>
+              <p>タケノコ狩りが人気です。ぜひタケノコ狩りを楽しんでみてください！</p>
+            </div>
+          </li>
+        </ul>
+  </section>
+  <section id="sites">
+    <h2>みどころ3選</h2>
+    <div class="flex-container">
+      <div class="card-outer">
+          <div class="card-img"><img src="img/hanabi.jpg" alt=""></div>    
+          <div class="card-text">
+            <!-- <span class="highlight">強調したい文字</span> で囲うとハイライトが引かれます-->
+            <h3>とよおかまつり</h3>
+            <p><span class="highlight">小さな村の、大きなお祭り</span></p>
+            <p><b>たくさんの屋台やイベントがあります！2023年には、スカイランタンを空にあげる企画もありました。</b></p>
+          </div>    
+      </div>
+      <div class="card-outer">
+        <div class="card-img"><img src="img/teppennkouenn.jpg" alt=""></div>    
+        <div class="card-text">
+          <h3>てっぺん公園</h3>
+          <p><span class="highlight">標高800Mから豊丘村を一望できます！</span>ほうきやデッキブラシを使い、空を飛ぶ写真が撮れます！</p>
+          <p><b>アクセス：〒399-3202 長野県下伊那郡豊丘村神稲</b></p>
+          <p><b>引用　とよおか旅時間</b></p>
+        </div>    
+      </div>
+      <div class="card-outer">
+        <div class="card-img"><img src="img/notanohira.jpg" alt=""></div>    
+        <div class="card-text">
+          <h3>野田平キャンプ場</h3>
+          <p>自然がいっぱいの場所です。旧野田野平分校の校舎が残っており、管理棟としてイベントに使われることもあるそうです。</p>
+           <p><b>アクセス：〒399-3202 長野県下伊那郡豊丘村神稲12523-1</b></p>
+           <p><b>引用　とよおか旅時間</b></p>
+        </div>    
+      </div>
+    </div>
+  </section>
+
+  <section id="photos">
+    <h2>ギャラリー</h2>
+    <div class="flex-container">
+      <div class="image-caption-flex-container"><img src="img/06.jpg" alt=""><p>豊丘村の風景や名所です。</p></div>
+      <div class="image-caption-flex-container"><img src="img/gohann.JPG" alt=""><p>　　　ベジフルキッチン　　　　　野菜の地産地消のレストランです。ヘルシーな料理をビュッフェ形式でたべられます。　引用　とよおか旅時間</p></div>
+      <div class="image-caption-flex-container"><img src="img/kaki.jpg" alt=""><p>林公園　かきっこ公園とも言います。絶景です。　引用　とよおか旅時間</p></div>
+      <div class="image-caption-flex-container"><img src="img/dannk.png" alt=""><p>豊丘村のマスコットキャラクター「だんQくん」マツタケ一本分の身長の男の子。とってもかわいいです！　　引用　豊丘村だんQくん自己紹介</p></div>
+      <div class="image-caption-flex-container"><img src="img/daria.jpg" alt=""><p>豊丘ダリア園　たくさんの花が咲いています。　引用　とよおか旅時間</p></div>
+    </div>
+  </section>
+
+  <section id="search">
+    <!-- 入力欄 -->
+    <div class="inputBox">
+      <h2>観光スポット</h2>
+        <select class="inputText">
+          <option>▼スポット名を選択</option>
+          <option>丘の上さくらんぼ園</option>
+          <option>南信州いちご村</option>
+          <option>豊丘ダリア園</option>
+          <option>豊丘マルシェ</option>
+          <option>野田野平キャンプ場</option>
+          <option>福島てっぺん公園</option>
+          <option>泉龍院</option>
+          <option>豊丘アイリス園</option>
+        </select>
+          
+   
+  <section id="wrapper">
+    <!--背景画像はCSSで指定-->
+    <p>豊丘村にぜひいらしてください！</p>  
+  </section>
+    
+  <footer>
+    © 2023 Life is Tech !
+  </footer>
+</body>
+</html>
+
+
+<!-- JavaScriptと連携する -->
+<script src="script.js"></script>
+<script src="common.js"></script>
+<script src="deploy.js"></script>

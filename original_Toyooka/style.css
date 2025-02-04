@@ -1,0 +1,257 @@
+/*=====================セクションにまたがっての設定=====================*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: serif;
+  text-align: center;
+  overflow-x: hidden; /*飛び出た部分は表示しない(レイアウト崩れ防止)*/
+}
+#history, #sites, #famous {
+  width: 900px;
+  margin: 100px auto;
+  overflow: hidden; /*飛び出た部分は表示しない(レイアウト崩れ防止)*/
+  text-align: center;
+}
+h2{
+  padding: 4px 0; /*上下の余白*/
+  border-bottom: solid 3px #334499; /*下線*/
+}
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+p{
+  text-align: left;
+  margin-bottom: 5px;
+}
+/*蛍光ペン風*/
+.highlight{
+  background: linear-gradient(transparent 60%, #9fa9d8 60%); /*パーセンテージを大きくすると細くなる。*/
+  font-weight: 600; /*フォント太さ*/
+}
+
+/*=====================ヘッダー=====================*/
+header {
+  color: #eeefff;
+  letter-spacing: 10px;
+  position: relative;
+  overflow: hidden; /*文字が飛びでレイアウトが崩れてしまうことを防止*/
+  z-index: 1; /*重ね順。数字が大きいほど手前(上；私たち側)に表示される*/
+  width: 100%;
+  height:100%;
+}
+.header-inner{
+  display: block;
+  text-align: center;
+  color: #eeefff;
+  margin-left: 25vw;  /*画面幅の25%*/
+  margin-right: 25vw; /*画面幅の25%*/
+  /*トップページに大きく表示される画像の上に文章をたくさん入れる場合、margin-topやmargin-bottomの値を小さくするといいかもしれません*/
+  margin-top:33vh; /*画面高さの25%*/
+  margin-bottom: 33vh;  /*画面高さの25%*/
+}
+
+header p {
+  letter-spacing: 5px;/*文字同士の間隔*/
+  line-height: 1.8;/*行間*/
+  text-align: left;
+}
+
+header:before {
+  content: '';
+  background-image: url(img/rinngo.jpg);
+  background-position: center center; /*背景画像位置指定*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  z-index: -1; /*重ね順。数字が大きいほど手前(上；私たち側)に表示される*/
+  /*もし文字が読みにくかったら以下2行を追加
+  /*-ms-filter: blur(2px) brightness(0.5);
+  filter: blur(2px) brightness(0.5); /*トップ画像 ぼかしと明度(0で真っ暗、1で元の明るさ)*/
+}
+
+/*=====================名産品=====================*/
+.timeline {
+    list-style: none;
+    margin: 30px auto;
+}
+.timeline li {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+}
+.timeline-date {
+  width: 116px;
+  float: left;
+  margin-top: 16px;
+}
+.timeline h3{
+  display: inline;
+  text-align: left;
+}
+/*線*/
+.timeline-content {
+  width: 75%;
+  float: left;
+  border-left: 3px #334499 solid;
+  padding: 15px 0 15px 30px;
+  text-align: left;
+  display: inline;
+}
+/*丸*/
+.timeline-content:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: #334499;
+  position: absolute;
+  left: 110px;
+  top: 20px;
+  border-radius: 100%;
+}
+
+/*=====================みどころ=====================*/
+.flex-container{
+  display: flex; /*並べ方の指定*/
+  justify-content: space-around; /*レイアウトをする際の内側の箱の並べ方の指定*/
+  flex-wrap: wrap; /*レイアウトをする際の内側の箱の並べ方の指定*/
+  align-content: space-around; /*レイアウトをする際の内側の箱の並べ方の指定*/
+}
+.card-outer{
+  display: flex; /*今回は写真と説明文のかたまり並べ方の指定*/
+  flex-direction: row; /*並べる方向の指定*/
+  align-content:center; /*並べる基準の指定*/
+  width:100%;
+  height:auto;
+  line-height: 1.5; /*行間*/
+  margin: 30px 7px 0 7px;    
+}
+.card-text{
+  padding: 18px;
+  margin:0;
+  background-color: #e9eded;
+  color:#555553;
+  width: 630px;
+}
+.card-text h3{
+  color: #333332;
+  margin-bottom: 10px;
+}
+.card-img img{
+  margin:0;
+  width: 360px;
+}
+.card-outer img{
+  max-width:100%;
+}
+
+/*=====================ギャラリー=====================*/
+#photos{
+  width: 900px;
+  margin: 100px auto; /*中央揃え*/
+  overflow: hidden;
+}
+#photos .flex-container{
+  justify-content: center; /*ギャラリーの写真とキャプションの並べ方の指定*/
+  align-content: center;
+  display: inline-block;
+}
+.image-caption-flex-container{
+  display: inline-flex;
+  flex-direction: column; /*写真とキャプションが上下に並ぶように配置*/
+}
+#photos img, #photos p{
+  display: inline;
+  width:270px;
+  margin: 20px 10px 0 10px;
+}
+#photos p{
+  margin-top: 10px;
+}
+
+/*=====================検索=====================*/
+/* 入力欄 */
+.inputBox {
+  margin: 0 auto;
+  height: 200%;
+}
+.inputText{
+  width:300%;
+  padding: 0;
+  margin: 30px 0;
+}
+.inputText {
+  height: 26px;
+  width: 200px;
+}
+
+/* ボタン */
+button {
+  background: #334499;
+  color: #fff;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+}
+/* ボタンにさわったとき */
+button:hover {
+  background: #9fa9d8;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* 出力欄 */
+.outputBox table {
+  background-color: #fff;
+  border-collapse: collapse;
+  width: 80%;
+  margin:0 auto
+}
+.outputBox td {
+  border: 1px solid #fff;
+  background-color: #e9eded;
+  padding: 10px;
+  
+}
+.outputBox th {
+  width: 130px;
+  border: 1px solid #fff;
+  padding: 10px;
+  background-color: #334499;
+  text-align: left;
+  color:#fff;
+}
+#search{
+  width: 900px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*=====================メッセージ=====================*/
+#wrapper {
+  background-image: url(img/yama.jpg);
+  background-size: cover;
+  color: #fff;
+  margin-top: 50px;
+  background-attachment: fixed;
+}
+
+#wrapper p {
+  padding: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+/*=====================フッター=====================*/
+footer {
+  text-align: center;
+  padding:20px 0 20px 0;
+  font-size: .8rem;
+}
