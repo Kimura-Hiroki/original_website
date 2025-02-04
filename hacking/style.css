@@ -1,0 +1,246 @@
+html { scroll-behavior: smooth;}
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+    margin: 0px;
+    padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 70px;
+  font-family: stoke;
+  text-align: center;
+/*  border-radius: 90px;*/
+}
+
+header {
+  background-color: #CC2F1E;
+  height: 450px;
+  padding-top: 0px;
+  border-style: solid;
+  border-color: #303026;
+  border-width:30px;
+  background-image:url(img/hacker-6512174_640.jpg)
+}
+
+.shop {
+  background-color: #273C2C;
+  color: #663300;
+  padding: 0px;
+  height: 400px;
+  }
+  
+  .shop-title {
+    color: #ffffee;
+    font-size: 30px;
+    border-bottom-style: dashed;
+    border-color: #ffd700;
+      width: 300px;
+      text-align: center;
+      margin: 0px auto;
+  }
+  
+  .shop p {
+    font-size: 20px;
+    background-color: #ffd700;
+    padding: 0px;
+    border-radius: 5px;
+    height: 250px;
+    margin-right: 100px;
+    margin-left: 100px; 
+    text-align: center
+    
+    }
+
+
+.mokuzi {
+/*  background-color: #ffffee;*/
+    background-image: url(img/p0394_l.jpeg);
+    
+    font-size: 28px;
+  color: #663300;
+  padding: 20px;
+    height: 550px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-style: solid;
+  border-color: #303026;
+  border-width:30px;
+  text-align: center;
+}
+
+.mokuzi-title {
+    color: #fff;
+  font-size: 30px;
+    background-color: #303026;
+    border-radius: 150px ;
+    border-style: none;
+    width: 400px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+
+.hacking {
+/*  background-color: #ffffee;*/
+    background-image: url(img/p0394_l.jpeg);
+    font-size: 25px;
+  color: #663300;
+  padding: 20px;
+    height: 400px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-style: solid;
+  border-color: #303026;
+  border-width:30px;
+  text-align: center;
+}
+
+.hacking-title {
+    color: #fff;
+  font-size: 30px;
+    background-color: #303026;
+    border-radius: 150px ;
+    border-style: none;
+    width: 400px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.higai {
+/*  background-color: #ffffee;*/
+    background-image: url(img/ai-generated-8211245_640.jpg),url(img/data-2764822_640.jpg);
+    background-size:300px,300px;
+    background-repeat: no-repeat,no-repeat;
+    background-position: bottom 10px right 200px, bottom 200px right 50px;
+  font-size:40px;
+  color: #663300;
+  padding: 20px;
+    height: 450px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-style: solid;
+  border-color: #303026;
+  border-width:30px;
+  
+}
+
+.higai-title {
+    color: #fff;
+  font-size: 30px;
+    background-color: #303026;
+    border-radius: 150px ;
+    border-style: none;
+    width: 400px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.teguti {
+/*  background-color: #ffffee;*/
+    background-image: url(img/dezain-1.png);
+  color: #663300;
+  font-size:24px;
+    padding: 40px;
+    height: 800px;
+    padding-right: 50px;
+    padding-left: 100px;
+    border-style: solid;
+  border-color: #303026;
+  border-width:30px;
+}
+
+.teguti-title {
+    color: #fff;
+  font-size: 30px;
+    background-color: #303026;
+    border-radius: 150px ;
+    border-style: none;
+    width: 400px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.zikenn {
+/*  background-color: #ffffee;*/
+    background-image: url(img/p0394_l.jpeg);
+    font-size:22px;
+  color: #663300;
+  padding: 40px;
+    height: 450px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-style: solid;
+  border-color: #303026;
+  border-width:30px;
+}
+
+.zikenn-title {
+    color: #fff;
+  font-size: 30px;
+    background-color: #303026;
+    border-radius: 150px ;
+    border-style: none;
+    width: 400px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.taiou {
+/*  background-color: #ffffee;*/
+    background-image: url(img/p0394_l.jpeg);
+    font-size: 18px;
+  color: #663300;
+  padding: 40px;
+    height: 500px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-style: solid;
+  border-color: #303026;
+  border-width:25px;
+}
+
+.taiou-title {
+    color: #fff;
+  font-size: 30px;
+    background-color: #303026;
+    border-radius: 150px ;
+    border-style: none;
+    width: 400px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.last {
+/*  background-color: #ffffee;*/
+    background-image: url(img/p0394_l.jpeg);
+  color: #663300;
+  padding: 20px;
+    height: 350px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-style: solid;
+  border-color: #303026;
+  border-width:30px;
+  font-size:20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.last-title {
+    color: #fff;
+  font-size: 30px;
+    background-color: #303026;
+    border-radius: 150px ;
+    border-style: none;
+    width: 400px;
+    text-align: center;
+    margin: 0px auto;
+}
